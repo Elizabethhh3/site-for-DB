@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Додати товар</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+    <span class="logo">catPhone</span>
+    <a href="index.php">На головну</a>
+    <a href="sample.php">ТОП-10</a>
+    <a href="zvit.html">Звіти</a>
+    <a href="clients.php">Клієнти</a>
+    <a href="products.php">Товари</a>
+    <a href="orders.php">Замовлення</a>
+    <a href="repair.php">Ремонт</a>
+    <a href="employee.php">Працівники</a>
+</div>
+<h1 style="font-size: 22px;">Додати товар</h1>
+
+<form action="save_product.php" method="POST" class="edit-form">
+    <div class="form-group">
+        <label for="model">Модель:</label>
+        <input type="text" id="model" name="model" required>
+    </div>
+    <div class="form-group">
+        <label for="manufacturer">Виробник:</label>
+        <input type="text" id="manufacturer" name="manufacturer" required>
+    </div>
+    <div class="form-group">
+        <label for="processor">Процесор:</label>
+        <input type="text" id="processor" name="processor" required>
+    </div>
+    <div class="form-group">
+        <label for="color">Колір:</label>
+        <input type="text" id="color" name="color" required>
+    </div>
+    <div class="form-group">
+        <label for="serial_number">Серійний номер:</label>
+        <input type="text" id="serial_number" name="serial_number" required>
+    </div>
+    <div class="form-group">
+        <label for="price">Ціна:</label>
+        <input type="text" id="price" name="price" required>
+    </div>
+    <div class="form-group">
+        <label for="quantity">Кількість на складі:</label>
+        <input type="text" id="quantity" value = 1 name="quantity" required>
+    </div>
+    <div class="form-group">
+        <label for="warranty">Гарантія:</label>
+        <input type="date" id="warranty" name="warranty" required>
+    </div>
+    <button type="submit" class="submit-button">Додати</button>
+</form>
+<!-- Кнопка "Назад" -->
+<a href="products.php" class="back-button">Назад</a>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Звіти</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+    <span class="logo">catPhone</span>
+    <a href="index.php">На головну</a>
+    <a href="sample.php">ТОП-10</a>
+    <a href="zvit.html">Звіти</a>
+    <a href="clients.php">Клієнти</a>
+    <a href="products.php">Товари</a>
+    <a href="orders.php">Замовлення</a>
+    <a href="repair.php">Ремонт</a>
+    <a href="employee.php">Працівники</a>
+</div>
+<div class="content">
+    <h2>Звіт про продажі за певний період:</h2>
+    <form method="POST" action="sales_report.php" class="edit-form">
+        <div class='form-group'>
+        <label for="start_date">Дата початку:</label>
+        <input type="date" id="start_date" name="start_date">
+    </div>
+        <div class='form-group'>
+        <label for="end_date">Дата закінчення:</label>
+        <input type="date" id="end_date" name="end_date">
+    </div>
+        <input type="submit" value="Згенерувати звіт" class="submit-button">
+    </form>
+
+    <h2>Звіт про стан замовлень:</h2>
+    <a href="order_status_report.php" class="submit-button">Згенерувати звіт</a>
+    <h2>Звіт про виконані ремонти за певний період:</h2>
+    <form method="POST" action="repair_report.php" class="edit-form">
+        <div class='form-group'>
+        <label for="start_date">Дата початку:</label>
+        <input type="date" id="start_date" name="start_date">
+    </div>
+    <div class='form-group'>
+        <label for="end_date">Дата закінчення:</label>
+        <input type="date" id="end_date" name="end_date">
+</div>
+        <input type="submit" value="Згенерувати звіт" class="submit-button">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Додати працівника</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+    <span class="logo">catPhone</span>
+    <a href="index.php">На головну</a>
+    <a href="sample.php">ТОП-10</a>
+    <a href="zvit.html">Звіти</a>
+    <a href="clients.php">Клієнти</a>
+    <a href="products.php">Товари</a>
+    <a href="orders.php">Замовлення</a>
+    <a href="repair.php">Ремонт</a>
+    <a href="employee.php">Працівники</a>
+</div>
+<h1 style="font-size: 22px;">Додати працівника</h1>
+
+<form action="save_employee.php" method="POST" class="edit-form">
+    <div class="form-group">
+        <label for="name">ПІБ:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Телефон:</label>
+        <input type="text" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="position">Посада:</label>
+        <input type="text" id="position" name="position" required>
+    </div>
+    <button type="submit" class="submit-button">Додати</button>
+</form>
+<!-- Кнопка "Назад" -->
+<a href="employee.php" class="back-button">Назад</a>
+
+</body>
+</html>

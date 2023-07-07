@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+/* Загальні стилі */
+body {
+  font-family: 'EB Garamond', sans-serif;
+  background-color: #ffdab9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-family: 'EB Garamond', sans-serif;
+  text-align: center;
+}
+
+.content p,
+h2,
+img,
+ul {
+  margin-left: 15px;
+  font-family: 'EB Garamond', sans-serif;
+}
+
+/* Стилі для навігаційної панелі */
+.navbar {
+  background-color: #8c725d;
+  display: flex;
+  font-family: 'EB Garamond', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: 200;
+}
+
+.navbar a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  font-family: 'EB Garamond', sans-serif;
+}
+
+.logo {
+  font-weight: bold;
+  margin-right: auto;
+  color: #000000;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: #881f1f;
+}
+
+/* Змінюємо розмір картинки */
+.image {
+  width: 800px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Додаємо тінь до картинки */
+.shadow {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Змінюємо форму картинки на круглу */
+.rounded-image {
+  border-radius: 50%;
+}
+
+/* Додаємо ефект при наведенні на картинку */
+.image:hover {
+  opacity: 0.8;
+}
+
+/* Стилізація таблиці */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #8f3c3c;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  font-size: large;
+  border-bottom: 1px solid #8f3c3c;
+  border-left: 1px solid #8f3c3c;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-size: large;
+}
+
+.edit-button,
+.delete-button,
+.add-button,
+.submit-button,
+.back-button,
+.search-button {
+  padding: 4px 8px;
+  color: #ffffff;
+  background-color: #cf0000;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'EB Garamond', sans-serif;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-decoration: none;
+  margin-right: 10px; /* Додано відстань між кнопками */
+}
+
+.edit-button {
+  background-color: #03a53e;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.add-button:hover,
+.submit-button:hover,
+.back-button:hover,
+.search-button:hover {
+  background-color: #8c8c8c; /* Зміна кольору при наведенні */
+  border-color: #8c8c8c; /* Зміна кольору рамки при наведенні */
+}
+
+.add-button-container {
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.add-button {
+  background-color: #1663a2;
+  font-size: 17px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+input[type='text'] {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #03a53e;
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.back-button {
+  background-color: #0346a2;
+  margin-left: 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.search-container {
+  align-items: left;
+  justify-content: left;
+  margin-left: 10px;
+  margin-top: -50px;
+}
+.search-button {
+  background-color: #a3a309;
+  font-size: 16px;
+}
+/* Стилізація стрілок сортування */
+.sort-arrow::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  font-family: 'EB Garamond', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sort-asc::before {
+  content: "\2191"; /* Символ стрілки вгору */
+  color: green;
+}
+
+.sort-desc::before {
+  content: "\2193"; /* Символ стрілки вниз */
+  color: red;
+}
