@@ -1,5 +1,6 @@
 # site-for-DB
 It's site for managing a database for a mobile phone sales and repair company)
+
 The database was designed, normalized by me.
 
 Photos:  ![зображення_2023-10-29_134518308](https://github.com/Elizabethhh3/site-for-DB/assets/118073696/33381285-020f-4810-9e4f-ff1e70e05572)
